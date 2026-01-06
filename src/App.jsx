@@ -1,12 +1,21 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import  Home from './pages/Home'
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<div className="p-10 text-center">Aquí construiremos la carta...</div>} />
+        <Route
+          path="/menu"
+          element={
+            <div className="p-10 text-center">
+              Aquí construiremos la carta...
+            </div>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

@@ -16,5 +16,5 @@ body {
   background-color: var(--color-brand-bg);
   color: var(--color-brand-dark);
   margin: 0;
-  -webkit-tap-highlight-color: transparent; /* Quita el cuadro azul al tocar botones en móvil */
+  -webkit-tap-highlight-color: transparent; 
 }
