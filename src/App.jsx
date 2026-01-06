@@ -1,13 +1,15 @@
-import './App.css'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import  Home from './pages/Home'
 
 function App() {
   return (
-    <div className="min-h-screen bg-orange-50 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-orange-600 drop-shadow-sm">
-        ¡La Chiclayanita está en marcha! 🥘
-      </h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<div className="p-10 text-center">Aquí construiremos la carta...</div>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
