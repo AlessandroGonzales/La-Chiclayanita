@@ -4,8 +4,6 @@ import logo from "../assets/lachiclayanita.png"
 import cusco from "../assets/cusco.webp"
 import cuscowithllama from "../assets/animal.jpg"
 
-
-
  const Home = () => {
   // Simulación de transición de imágenes de fondo
   const [bgIndex, setBgIndex] = useState(0);
