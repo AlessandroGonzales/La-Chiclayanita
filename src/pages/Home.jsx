@@ -6,13 +6,16 @@ import cuscowithllama from "../assets/animal.jpg"
 
  const Home = () => {
   // Simulación de transición de imágenes de fondo
+  const IMAGES = [cusco, cuscowithllama];
+
+const Home = () => {
   const [bgIndex, setBgIndex] = useState(0);
-  const images = [cusco, cuscowithllama]; 
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 4050); // Cambio cada 5 segundos
+      setBgIndex((prev) => (prev + 1) % IMAGES.length);
+    }, 4050); 
+
     return () => clearInterval(interval);
   }, []);
 
@@ -21,12 +24,17 @@ import cuscowithllama from "../assets/animal.jpg"
       {/* Imagen de Fondo con Transición */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-all duration-[1400ms] "
+          className="absolute inset-0 bg-cover bg-center transition-all duration-[1400ms] ease-in-out"
           style={{ 
             backgroundImage: `url(${images[bgIndex]})`,
             filter: 'brightness(0.7) contrast(1.1)' 
           }}
         />
+      </div>
+      <div className="hidden">
+        {IMAGES.map((src, i) => (
+          <img key={i} src={src} alt="preload" />
+        ))}
       </div>
 
       {/* Contenido Principal */}
