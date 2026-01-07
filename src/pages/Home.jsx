@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import logo from "../assets/lachiclayanita.png"
+import cusco from "../assets/cusco.webp"
+import cuscowithllama from "../assets/animal.jpg"
 
  const Home = () => {
   // Simulación de transición de imágenes de fondo
   const [bgIndex, setBgIndex] = useState(0);
-  const images = ["src/assets/cusco.webp", "src/assets/animal.jpg"]; 
+  const images = [cusco, cuscowithllama]; 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,7 +35,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
         {/* Header: Logo y Títulos */}
         <div className="flex flex-col items-center text-center mt-10">
           <div className="w-48 h-48 mb-6 animate-fade-in">
-            <img src="src/assets/LaChiclayanita.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src={logo} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <h2 className="text-brand-pink tracking-[0.3em] uppercase text-sm font-medium mb-2">
             Resto - Bar
