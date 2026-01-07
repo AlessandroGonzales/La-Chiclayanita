@@ -4,6 +4,7 @@ import logo from "../assets/lachiclayanita.png";
 import chiclayo from "../assets/chiclayo.jpg"
 import pimental from "../assets/pimental.webp";
 
+
 // Simulación de transición de imágenes de fondo
 const IMAGES = [chiclayo, pimental];
 
