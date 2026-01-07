@@ -11,7 +11,7 @@ function App() {
         <Route
           path="/menu"
           element={
-            <div className="p-10 text-center">
+            <div className="p-40 text-center">
               Aquí construiremos la carta...
             </div>
           }

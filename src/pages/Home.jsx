@@ -1,41 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import logo from "../assets/lachiclayanita.png"
-import cusco from "../assets/cusco.webp"
-import cuscowithllama from "../assets/animal.jpg"
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import logo from "../assets/lachiclayanita.png";
+import cusco from "../assets/cusco.webp";
+import cuscowithllama from "../assets/animal.jpg";
 
- const Home = () => {
+const Home = () => {
   // Simulación de transición de imágenes de fondo
   const [bgIndex, setBgIndex] = useState(0);
-  const images = [cusco, cuscowithllama]; 
+  const isLowEndDevice =
+    navigator.hardwareConcurrency <= 4 || /Android/i.test(navigator.userAgent);
 
+  const images = isLowEndDevice ? [cusco] : [cusco, cuscowithllama];
   useEffect(() => {
-    const interval = setInterval(() => {
-      setBgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 5000); // Cambio cada 5 segundos
-    return () => clearInterval(interval);
-  }, []);
+    if (images.length === 1) return;
 
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % images.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   return (
     <div className="relative h-screen w-full overflow-hidden bg-brand-dark">
       {/* Imagen de Fondo con Transición */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-all duration-[2500ms] "
-          style={{ 
+        <div
+          className={`absolute inset-0 bg-cover bg-center
+  ${isLowEndDevice ? "" : "transition-opacity duration-[2000ms]"}`}
+          style={{
             backgroundImage: `url(${images[bgIndex]})`,
-            filter: 'brightness(0.7) contrast(1.1)' 
+            opacity: 0.85,
           }}
         />
       </div>
 
       {/* Contenido Principal */}
       <div className="relative z-10 flex flex-col items-center justify-between h-full px-6 py-16">
-        
         {/* Header: Logo y Títulos */}
         <div className="flex flex-col items-center text-center mt-10">
-          <div className="w-48 h-48 mb-6 animate-fade-in">
-            <img src={logo} alt="Logo" className="w-full h-full object-contain" />
+          <div className={`w-48 h-48 mb-6 ${isLowEndDevice ? '' : 'animate-fade-in'}`}>
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <h2 className="text-brand-pink tracking-[0.3em] uppercase text-sm font-medium mb-2">
             Resto - Bar
@@ -48,16 +56,19 @@ import cuscowithllama from "../assets/animal.jpg"
 
         {/* Bottom: Botón de Acción */}
         <div className="w-full max-w-xs mb-10">
-          <Link 
-            to="/menu" 
+          <Link
+            to="/menu"
             className="group relative flex items-center justify-center w-full bg-brand-pink text-brand-dark font-bold py-5 rounded-2xl shadow-2xl active:scale-95 transition-all overflow-hidden"
           >
-            <span className="relative z-10 text-lg uppercase tracking-wider">Explorar Menú</span>
+            <span className="relative z-10 text-lg uppercase tracking-wider">
+              Explorar Menú
+            </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-active:translate-y-0 transition-transform"></div>
           </Link>
-          <p className="text-white/70 text-center text-xs mt-6 tracking-widest uppercase">Chiclayo • Perú</p>
+          <p className="text-white/70 text-center text-xs mt-6 tracking-widest uppercase">
+            Chiclayo • Perú
+          </p>
         </div>
-
       </div>
     </div>
   );
