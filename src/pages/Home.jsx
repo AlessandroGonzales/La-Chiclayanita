@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import logo from "../assets/lachiclayanita.png";
-import cusco from "../assets/cusco.webp";
-import cuscowithllama from "../assets/animal.jpg";
+import chiclayo from "../assets/chiclayo.jpg"
+import pimental from "../assets/pimental.webp";
 
 // Simulación de transición de imágenes de fondo
-const IMAGES = [cusco, cuscowithllama];
+const IMAGES = [chiclayo, pimental];
 
 const Home = () => {
   const [bgIndex, setBgIndex] = useState(0);
@@ -26,7 +26,7 @@ const Home = () => {
           className="absolute inset-0 bg-cover bg-center transition-all duration-[1400ms] ease-in-out"
           style={{
             backgroundImage: `url(${IMAGES[bgIndex]})`,
-            filter: "brightness(0.7) contrast(1.1)",
+            filter: "brightness(0.8) contrast(1.1)",
           }}
         />
       </div>
