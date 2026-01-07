@@ -12,7 +12,7 @@ import cuscowithllama from "../assets/animal.jpg"
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 4050); // Cambio cada 5 segundos
+    }, 5000); // Cambio cada 5 segundos
     return () => clearInterval(interval);
   }, []);
 
@@ -21,7 +21,7 @@ import cuscowithllama from "../assets/animal.jpg"
       {/* Imagen de Fondo con Transición */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] "
+          className="absolute inset-0 bg-cover bg-center transition-all duration-[2500ms] "
           style={{ 
             backgroundImage: `url(${images[bgIndex]})`,
             filter: 'brightness(0.7) contrast(1.1)' 
