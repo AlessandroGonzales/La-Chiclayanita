@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/menu/:categoryKey" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   );
