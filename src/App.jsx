@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import ScrollToTop from "./ScrollToTop";
+import Menu from "./pages/Menu"; // Asegúrate de crearlo en tu carpeta de páginas
 
 function App() {
   return (
@@ -8,14 +9,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/menu"
-          element={
-            <div className="p-40 text-center">
-              Aquí construiremos la carta...
-            </div>
-          }
-        />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   );
