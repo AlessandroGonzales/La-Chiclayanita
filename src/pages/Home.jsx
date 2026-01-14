@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import logo from "../assets/lachiclayanita.png";
-import chiclayo from "../assets/chiclayo.jpg"
+import chiclayo from "../assets/chiclayoperu.jpg"
 import pimental from "../assets/pimental.webp";
 
 

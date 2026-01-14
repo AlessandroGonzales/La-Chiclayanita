@@ -9,7 +9,7 @@ const menuOfDay = [
   {
     id: 1,
     title: "Miercoles",
-    subtitle: "Tallarin con pollo con sopa",
+    subtitle: "Tallarin con pollo y sopa",
     price: 10000,
     url: fideospollo,
   },
