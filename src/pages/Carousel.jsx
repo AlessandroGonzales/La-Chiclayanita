@@ -3,7 +3,7 @@ import {  useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import fideospollo from "../assets/fideitos.png";
-import ajigallina from "../assets/ajigallina.jpg";
+import ajigallina from "../assets/aijgallina.webp";
 
 const menuOfDay = [
   {
