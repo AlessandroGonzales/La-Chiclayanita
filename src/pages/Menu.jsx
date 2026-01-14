@@ -24,7 +24,7 @@ import chaufamariscos from "../assets/chaufamariscos.jpg";
 
 // Imagenes de carne
 import lomosaltado from "../assets/lomosaltado.png";
-import broaster from "../assets/broaster.png";
+import broaster from "../assets/broasterdos.png";
 import chaufapollo from "../assets/chaufapollo.jpg";
 import mostrito from "../assets/mostrito.jpg";
 import bistecpapas from "../assets/bistecpapas.jpg";
