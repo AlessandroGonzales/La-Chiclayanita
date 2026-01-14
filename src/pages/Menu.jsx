@@ -16,7 +16,7 @@ import ceviche from "../assets/ceviche.jpg";
 import arrozmariscos from "../assets/arrozmariscos.jpg";
 import sudado from "../assets/sudado.jpg";
 import cevichemixto from "../assets/cevichemixto.jpg"
-import cevichechicharron from "../assets/cevicheChicharron.png"
+import cevichechicharron from "../assets/cevichechicharron.png"
 import chicharronpescado from "../assets/chicharronpescado.jpg"
 import chicharronrabas from "../assets/chicharronrabas.jpg"
 import chaufamariscos from "../assets/chaufamariscos.jpg"
