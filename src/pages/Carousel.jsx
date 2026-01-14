@@ -8,8 +8,8 @@ import ajigallina from "../assets/aijgallina.webp";
 const menuOfDay = [
   {
     id: 1,
-    title: "Lunes",
-    subtitle: "Fideos con pollo",
+    title: "Miercoles",
+    subtitle: "Tallarin con pollo con sopa",
     price: 10000,
     url: fideospollo,
   },
