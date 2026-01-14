@@ -54,6 +54,7 @@ const MENU_DATA = {
       detalles: "Pescado del día, Pulpo, Calamar, Ají Limo",
       precio: 15000,
       url: ceviche,
+      config: "eager"
     },
     {
       id: "p2",
@@ -62,6 +63,7 @@ const MENU_DATA = {
       detalles: "Pescado, Langostinos, Calamar, Pulpo, Camote, Cancha",
       precio: 20000,
       url: cevichemixto,
+      config: "eager"
     },
     {
       id: "p3",
@@ -70,6 +72,7 @@ const MENU_DATA = {
       detalles: "Ceviche clásico, Chicharrón de pescado, Yuca frita, Salsa criolla",
       precio: 20000,
       url: cevichechicharron,
+      config: "lazy"
     },
     {
       id: "p4",
@@ -78,6 +81,7 @@ const MENU_DATA = {
       detalles: "Filete de pescado, Yuca dorada, Salsa criolla, Salsa tártara",
       precio: 15000,
       url: chicharronpescado,
+      config: "lazy"
     },
     {
       id: "p5",
@@ -86,6 +90,7 @@ const MENU_DATA = {
       detalles: "Pescado, Aros de calamar (Rabas), Yuca frita, Salsas de la casa",
       precio: 20000,
       url: chicharronrabas,
+      config: "lazy"
     },
     {
       id: "p6",
@@ -94,6 +99,7 @@ const MENU_DATA = {
       detalles: "Langostinos, Calamar, Conchas de Abanico",
       precio: 15000,
       url: arrozmariscos,
+      config: "lazy"
     },
     {
       id: "p7",
@@ -102,6 +108,7 @@ const MENU_DATA = {
       detalles: "Arroz, Mix de mariscos, Huevo, Cebolla china, Sillao",
       precio: 15000,
       url: chaufamariscos,
+      config: "lazy"
     },
     {
       id: "p8",
@@ -110,6 +117,7 @@ const MENU_DATA = {
       detalles: "Chicha de Jora, Tomate, Yuca, Pescado",
       precio: 20000,
       url: sudado,
+      config: "lazy"
     },
   ],
   carnes: [
@@ -120,6 +128,7 @@ const MENU_DATA = {
       detalles: "Lomo Fino, Papas Amarillas, Arroz",
       precio: 10000,
       url: lomosaltado,
+      config: "eager"
     },
     {
       id: "c2",
@@ -128,6 +137,7 @@ const MENU_DATA = {
       detalles: "Pollo en trozos, Arroz frito, Huevo, Cebolla china, Aceite de ajonjolí",
       precio: 10000,
       url: chaufapollo,
+      config: "eager"
     },
     {
       id: "c3",
@@ -136,6 +146,7 @@ const MENU_DATA = {
       detalles: "Pollo crocante, Papas fritas, Ensalada fresca, Cremas",
       precio: 8000,
       url: broaster,
+      config: "lazy"
     },
     {
       id: "c4",
@@ -144,6 +155,7 @@ const MENU_DATA = {
       detalles: "Pollo broaster, Arroz chaufa, Papas fritas, Ensalada",
       precio: 12000,
       url: mostrito,
+      config: "lazy"
     },
     {
       id: "c5",
@@ -152,6 +164,7 @@ const MENU_DATA = {
       detalles: "Pollo, Carne de res, Arroz frito, Huevo, Cebolla china",
       precio: 12000,
       url: chaufados,
+      config: "lazy"
     },
     {
       id: "c6",
@@ -160,6 +173,7 @@ const MENU_DATA = {
       detalles: "Pollo, Res, Cerdo asado, Arroz, Tortilla de huevo",
       precio: 15000,
       url: chaufatres,
+      config: "lazy"
     },
     {
       id: "c7",
@@ -168,6 +182,7 @@ const MENU_DATA = {
       detalles: "Bistec de res, Plátano frito, Huevo frito, Papas fritas, Arroz",
       precio: 10000,
       url: bistecpobredos,
+      config: "lazy"
     },
     {
       id: "c8",
@@ -176,6 +191,7 @@ const MENU_DATA = {
       detalles: "Bistec de res, Papas fritas, Arroz blanco, Ensalada del día",
       precio: 8000,
       url: bistecpapas,
+      config: "lazy"
     },
     {
       id: "c9",
@@ -184,6 +200,7 @@ const MENU_DATA = {
       detalles: "Cordero tierno, Salsa de culantro, Frejoles, Arroz blanco, Yuca",
       precio: 15000,
       url: secocarne,
+      config: "lazy"
     },
   ],
   entradas: [
@@ -194,6 +211,7 @@ const MENU_DATA = {
       detalles: "Papa sancochada, Salsa huancaína casera, Aceituna, Huevo duro, Lechuga",
       precio: 5000,
       url: papahuancainda,
+      config: "eager"
     },
   ],
   bebidas: [
@@ -204,6 +222,7 @@ const MENU_DATA = {
       detalles: "Bebida gasificada, Servida helada",
       precio: 3500, 
       url: cocacola,
+      config: "eager"
     },
     {
       id: "b2",
@@ -212,6 +231,7 @@ const MENU_DATA = {
       detalles: "Cerveza en botella, Cebada malteada (5% Alc. Vol.)",
       precio: 3000,
       url: budweiser,
+      config: "eager"
     },
   ],
   pastas: [
@@ -222,6 +242,7 @@ const MENU_DATA = {
       detalles: "Fideos gruesos, Carne de res, Cebolla, Tomate, Sillao",
       precio: 10000,
       url: tallarinsaltado,
+      config: "eager"
     },
     {
       id: "p2",
@@ -230,6 +251,7 @@ const MENU_DATA = {
       detalles: "Fideos, Pollo, Carne de res, Verduras salteadas, Salsa oriental",
       precio: 12000,
       url: fideosdos,
+      config: "eager"
     },
     {
       id: "p3",
@@ -238,6 +260,7 @@ const MENU_DATA = {
       detalles: "Fideos, Pollo, Res, Cerdo/Langostino, Verduras chinas",
       precio: 15000,
       url: fideostres,
+      config: "lazy"
     },
     {
       id: "p4",
@@ -246,6 +269,7 @@ const MENU_DATA = {
       detalles: "Tallarín rojo o saltado, Ceviche de pescado, Papa huancaína",
       precio: 8000,
       url: combinado,
+      config: "lazy"
     },
   ],
 };
@@ -329,6 +353,7 @@ const CategoryView = ({ categoryTitle, items, onBack }) => (
               src={plato.url}
               alt={plato.nombre}
               className="w-full h-48 object-cover object-center transition-transform hover:scale-105 duration-700"
+              loading={plato.config}
             />
           </div>
           <div className="flex flex-wrap gap-2">
