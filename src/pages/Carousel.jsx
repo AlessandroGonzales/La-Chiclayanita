@@ -22,8 +22,21 @@ const menuOfDay = [
   },
 ];
 
+
 const ServiceCard = ({ service }) => {
   if (!service) return null;
+  const PHONE_NUMBER = "5493516210718";
+
+  const handleWhatsAppClick = () => {
+    // El mensaje que recibirá el restaurante
+  const message = `Hola! Me gustaría pedir el Menú del día ${service.title}: ${service.subtitle} que vi en la carta.`;
+
+  const encodedMessage = encodeURIComponent(message);
+    
+  const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodedMessage}`;
+    
+  window.open(whatsappUrl, "_blank");
+  }
 
   return (
     <div className="relative w-full h-full overflow-hidden transition-all duration-500">
@@ -43,7 +56,7 @@ const ServiceCard = ({ service }) => {
         <p className="text-lg font-bold text-white/90 mb-4">
           ${new Intl.NumberFormat("es-AR").format(service.price)}
         </p>
-        <button className="w-fit px-6 py-2 rounded-full text-[10px] font-bold uppercase bg-white text-black hover:bg-brand-pink hover:text-white transition-colors">
+        <button onClick={handleWhatsAppClick}className="w-fit px-6 py-2 rounded-full text-[10px] font-bold uppercase bg-white text-black hover:bg-brand-pink hover:text-white transition-colors">
           Pedir Menú
         </button>
       </div>
