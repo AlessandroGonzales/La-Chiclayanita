@@ -9,88 +9,96 @@ import {
   Info,
   Salad,
 } from "lucide-react";
-import { GiNoodles } from "react-icons/gi"; 
+import { GiNoodles } from "react-icons/gi";
+import ServicesCarousel from "../pages/Carousel";
 
 // Imagenes de comida marina
 import ceviche from "../assets/ceviche.jpg";
 import arrozmariscos from "../assets/arrozmariscos.jpg";
 import sudado from "../assets/sudado.jpg";
-import cevichemixto from "../assets/cevichemixto.jpg"
-import cevichechicharron from "../assets/cevichechicharron.png"
-import chicharronpescado from "../assets/chicharronpescado.jpg"
-import chicharronrabas from "../assets/chicharronrabas.jpg"
-import chaufamariscos from "../assets/chaufamariscos.jpg"
+import cevichemixto from "../assets/cevichemixto.jpg";
+import cevichechicharron from "../assets/cevichechicharron.png";
+import chicharronpescado from "../assets/chicharronpescado.jpg";
+import chicharronrabas from "../assets/chicharronrabas.jpg";
+import chaufamariscos from "../assets/chaufamariscos.jpg";
 
-// Imagenes de carne 
-import lomosaltado from "../assets/lomosaltado.png"
-import broaster from "../assets/broaster.png"
-import chaufapollo from "../assets/chaufapollo.jpg"
-import mostrito from "../assets/mostrito.jpg"
-import bistecpapas from "../assets/bistecpapas.jpg"
-import secocarne from "../assets/secocarne.png"
-import chaufados from "../assets/chufados.jpg"
-import chaufatres from "../assets/chaufatres.webp"
-import bistecpobredos from "../assets/bistecpobredos.jpeg"
+// Imagenes de carne
+import lomosaltado from "../assets/lomosaltado.png";
+import broaster from "../assets/broaster.png";
+import chaufapollo from "../assets/chaufapollo.jpg";
+import mostrito from "../assets/mostrito.jpg";
+import bistecpapas from "../assets/bistecpapas.jpg";
+import secocarne from "../assets/secocarne.png";
+import chaufados from "../assets/chufados.jpg";
+import chaufatres from "../assets/chaufatres.webp";
+import bistecpobredos from "../assets/bistecpobredos.jpeg";
 
 // Imagenes de Pastas
-import tallarinsaltado from "../assets/tallarinsaltado.png"
-import combinado from "../assets/combinado.png"
-import fideosdos from "../assets/fideosdos.jpg"
-import fideostres from "../assets/fideostres.jpg"
+import tallarinsaltado from "../assets/tallarinsaltado.png";
+import combinado from "../assets/combinado.png";
+import fideosdos from "../assets/fideosdos.jpg";
+import fideostres from "../assets/fideostres.jpg";
 
-// Imagenes de entradas 
-import papahuancainda from "../assets/papahuancaina.jpg"
+// Imagenes de entradas
+import papahuancainda from "../assets/papahuancaina.jpg";
 
 // Imagenes de bebidas
-import budweiser from "../assets/budweiser.jpg"
-import cocacola from "../assets/cocacola.jpg"
+import budweiser from "../assets/budweiser.jpg";
+import cocacola from "../assets/cocacola.jpg";
 
 const MENU_DATA = {
   marina: [
     {
       id: "p1",
       nombre: "Ceviche",
-      descripcion: "Cubos de pescado fresco marinados en limón, con calamar crujiente.",
+      descripcion:
+        "Cubos de pescado fresco marinados en limón, con calamar crujiente.",
       detalles: "Pescado del día, Pulpo, Calamar, Ají Limo",
       precio: 15000,
       url: ceviche,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "p2",
       nombre: "Ceviche Mixto",
-      descripcion: "Una explosión de frescura marina con pesca del día y mariscos selectos marinados en leche de tigre.",
+      descripcion:
+        "Una explosión de frescura marina con pesca del día y mariscos selectos marinados en leche de tigre.",
       detalles: "Pescado, Langostinos, Calamar, Pulpo, Camote, Cancha",
       precio: 20000,
       url: cevichemixto,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "p3",
       nombre: "Ceviche con chicharrón de pescado",
-      descripcion: "Lo mejor de dos mundos: la frescura del ceviche clásico acompañado de trozos de pescado fritos y crocantes.",
-      detalles: "Ceviche clásico, Chicharrón de pescado, Yuca frita, Salsa criolla",
+      descripcion:
+        "Lo mejor de dos mundos: la frescura del ceviche clásico acompañado de trozos de pescado fritos y crocantes.",
+      detalles:
+        "Ceviche clásico, Chicharrón de pescado, Yuca frita, Salsa criolla",
       precio: 20000,
       url: cevichechicharron,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p4",
       nombre: "Chicharron de pescado simple",
-      descripcion: "Trozos de filete de pescado arrebozados al punto exacto de crocancia, servidos con guarnición.",
+      descripcion:
+        "Trozos de filete de pescado arrebozados al punto exacto de crocancia, servidos con guarnición.",
       detalles: "Filete de pescado, Yuca dorada, Salsa criolla, Salsa tártara",
       precio: 15000,
       url: chicharronpescado,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p5",
       nombre: "Chicharrón de pescado mixto con rabas",
-      descripcion: "Festín marino crujiente que combina trozos de pescado y aros de calamar dorados.",
-      detalles: "Pescado, Aros de calamar (Rabas), Yuca frita, Salsas de la casa",
+      descripcion:
+        "Festín marino crujiente que combina trozos de pescado y aros de calamar dorados.",
+      detalles:
+        "Pescado, Aros de calamar (Rabas), Yuca frita, Salsas de la casa",
       precio: 20000,
       url: chicharronrabas,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p6",
@@ -99,16 +107,17 @@ const MENU_DATA = {
       detalles: "Langostinos, Calamar, Conchas de Abanico",
       precio: 15000,
       url: arrozmariscos,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p7",
       nombre: "Arroz chaufa con mariscos",
-      descripcion: "Fusión peruano-china al wok. Arroz frito con mariscos frescos, toque de kion y sillao.",
+      descripcion:
+        "Fusión peruano-china al wok. Arroz frito con mariscos frescos, toque de kion y sillao.",
       detalles: "Arroz, Mix de mariscos, Huevo, Cebolla china, Sillao",
       precio: 15000,
       url: chaufamariscos,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p8",
@@ -117,7 +126,7 @@ const MENU_DATA = {
       detalles: "Chicha de Jora, Tomate, Yuca, Pescado",
       precio: 20000,
       url: sudado,
-      config: "lazy"
+      config: "lazy",
     },
   ],
   carnes: [
@@ -128,148 +137,168 @@ const MENU_DATA = {
       detalles: "Lomo Fino, Papas Amarillas, Arroz",
       precio: 10000,
       url: lomosaltado,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "c2",
       nombre: "Chaufa de pollo",
-      descripcion: "El clásico favorito. Arroz salteado al wok con trozos de pollo, huevo y el sabor ahumado oriental.",
-      detalles: "Pollo en trozos, Arroz frito, Huevo, Cebolla china, Aceite de ajonjolí",
+      descripcion:
+        "El clásico favorito. Arroz salteado al wok con trozos de pollo, huevo y el sabor ahumado oriental.",
+      detalles:
+        "Pollo en trozos, Arroz frito, Huevo, Cebolla china, Aceite de ajonjolí",
       precio: 10000,
       url: chaufapollo,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "c3",
       nombre: "Pollo broaster",
-      descripcion: "Pieza de pollo con piel extra crujiente y carne jugosa, acompañada de papas doradas.",
+      descripcion:
+        "Pieza de pollo con piel extra crujiente y carne jugosa, acompañada de papas doradas.",
       detalles: "Pollo crocante, Papas fritas, Ensalada fresca, Cremas",
       precio: 8000,
       url: broaster,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c4",
       nombre: "Mostrito",
-      descripcion: "La combinación contundente para grandes apetitos: Chaufa clásico servido con un cuarto de pollo broaster.",
+      descripcion:
+        "La combinación contundente para grandes apetitos: Chaufa clásico servido con un cuarto de pollo broaster.",
       detalles: "Pollo broaster, Arroz chaufa, Papas fritas, Ensalada",
       precio: 12000,
       url: mostrito,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c5",
       nombre: "Chaufa 2 sabores",
-      descripcion: "Doble sabor en tu plato. Arroz chaufa salteado con pollo y carne de res seleccionada.",
+      descripcion:
+        "Doble sabor en tu plato. Arroz chaufa salteado con pollo y carne de res seleccionada.",
       detalles: "Pollo, Carne de res, Arroz frito, Huevo, Cebolla china",
       precio: 12000,
       url: chaufados,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c6",
       nombre: "Chaufa 3 sabores",
-      descripcion: "La versión especial del chaufa con tres proteínas: pollo, carne y chancho asado (o langostino según disponibilidad).",
+      descripcion:
+        "La versión especial del chaufa con tres proteínas: pollo, carne y chancho asado (o langostino según disponibilidad).",
       detalles: "Pollo, Res, Cerdo asado, Arroz, Tortilla de huevo",
       precio: 15000,
       url: chaufatres,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c7",
       nombre: "Bistec a lo pobre",
-      descripcion: "Suculento bistec a la parrilla servido con plátano y huevo frito, un clásico contundente.",
-      detalles: "Bistec de res, Plátano frito, Huevo frito, Papas fritas, Arroz",
+      descripcion:
+        "Suculento bistec a la parrilla servido con plátano y huevo frito, un clásico contundente.",
+      detalles:
+        "Bistec de res, Plátano frito, Huevo frito, Papas fritas, Arroz",
       precio: 10000,
       url: bistecpobredos,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c8",
       nombre: "Bistec con papas fritas",
-      descripcion: "Bistec de res jugoso y sazonado, acompañado de abundantes papas fritas crocantes.",
+      descripcion:
+        "Bistec de res jugoso y sazonado, acompañado de abundantes papas fritas crocantes.",
       detalles: "Bistec de res, Papas fritas, Arroz blanco, Ensalada del día",
       precio: 8000,
       url: bistecpapas,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "c9",
       nombre: "Seco de cordero",
-      descripcion: "Guiso tradicional norteño de cordero macerado en chicha de jora y culantro, cocido a fuego lento.",
-      detalles: "Cordero tierno, Salsa de culantro, Frejoles, Arroz blanco, Yuca",
+      descripcion:
+        "Guiso tradicional norteño de cordero macerado en chicha de jora y culantro, cocido a fuego lento.",
+      detalles:
+        "Cordero tierno, Salsa de culantro, Frejoles, Arroz blanco, Yuca",
       precio: 15000,
       url: secocarne,
-      config: "lazy"
+      config: "lazy",
     },
   ],
   entradas: [
     {
       id: "e1",
       nombre: "Papa huancaina - Estilo Chiclayo",
-      descripcion: "Rodajas de papa bañadas en nuestra crema especial de ají amarillo y queso fresco, con el toque chiclayano.",
-      detalles: "Papa sancochada, Salsa huancaína casera, Aceituna, Huevo duro, Lechuga",
+      descripcion:
+        "Rodajas de papa bañadas en nuestra crema especial de ají amarillo y queso fresco, con el toque chiclayano.",
+      detalles:
+        "Papa sancochada, Salsa huancaína casera, Aceituna, Huevo duro, Lechuga",
       precio: 5000,
       url: papahuancainda,
-      config: "eager"
+      config: "eager",
     },
   ],
   bebidas: [
     {
       id: "b1",
       nombre: "Coca Cola",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "Bebida gasificada, Servida helada",
-      precio: 3500, 
+      precio: 3500,
       url: cocacola,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "b2",
       nombre: "Budweiser",
-      descripcion: "Cerveza lager de estilo americano, cuerpo medio y sabor fresco.",
+      descripcion:
+        "Cerveza lager de estilo americano, cuerpo medio y sabor fresco.",
       detalles: "Cerveza en botella, Cebada malteada (5% Alc. Vol.)",
       precio: 3000,
       url: budweiser,
-      config: "eager"
+      config: "eager",
     },
   ],
   pastas: [
     {
       id: "p1",
       nombre: "Tallarin saltado de carne",
-      descripcion: "Fideos criollos salteados al wok con trozos de carne, verduras crujientes y salsa de soya.",
+      descripcion:
+        "Fideos criollos salteados al wok con trozos de carne, verduras crujientes y salsa de soya.",
       detalles: "Fideos gruesos, Carne de res, Cebolla, Tomate, Sillao",
       precio: 10000,
       url: tallarinsaltado,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "p2",
       nombre: "Tallarin saltado 2 sabores",
-      descripcion: "La fusión perfecta de fideos salteados con pollo y carne de res jugosa.",
-      detalles: "Fideos, Pollo, Carne de res, Verduras salteadas, Salsa oriental",
+      descripcion:
+        "La fusión perfecta de fideos salteados con pollo y carne de res jugosa.",
+      detalles:
+        "Fideos, Pollo, Carne de res, Verduras salteadas, Salsa oriental",
       precio: 12000,
       url: fideosdos,
-      config: "eager"
+      config: "eager",
     },
     {
       id: "p3",
       nombre: "Tallarín saltado 3 sabores",
-      descripcion: "Plato especial de fideos al wok con tres carnes y el ahumado característico.",
+      descripcion:
+        "Plato especial de fideos al wok con tres carnes y el ahumado característico.",
       detalles: "Fideos, Pollo, Res, Cerdo/Langostino, Verduras chinas",
       precio: 15000,
       url: fideostres,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "p4",
       nombre: "Combinado",
-      descripcion: "La mezcla favorita del puerto: Tallarines, Ceviche fresco y Papa a la Huancaína en un solo plato.",
+      descripcion:
+        "La mezcla favorita del puerto: Tallarines, Ceviche fresco y Papa a la Huancaína en un solo plato.",
       detalles: "Tallarín rojo o saltado, Ceviche de pescado, Papa huancaína",
       precio: 8000,
       url: combinado,
-      config: "lazy"
+      config: "lazy",
     },
   ],
 };
@@ -339,8 +368,8 @@ const CategoryView = ({ categoryTitle, items, onBack }) => (
                 {new Intl.NumberFormat("es-AR", {
                   style: "currency",
                   currency: "ARS",
-                  minimumFractionDigits: 2, 
-                  maximumFractionDigits: 2, 
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
                 }).format(plato.precio)}
               </div>
             </span>
@@ -450,7 +479,22 @@ const Menu = () => {
           </button>
         ))}
       </div>
+      <section className="mt-12">
+        <header className="mb-6 text-center">
+          <h2 className="text-brand-dark text-3xl font-bold tracking-tight mb-2">
+            Especiales del día
+          </h2>
+          <p className="text-brand-dark/70 text-sm uppercase tracking-widest">
+            Lunes a Viernes
+          </p>
+          <div className="w-12 h-1 bg-brand-pink mx-auto mt-4  rounded-full"></div>
+        </header>
 
+        {/* Contenedor del Carrusel */}
+        <div className="w-full max-w-md mx-auto">
+          <ServicesCarousel />
+        </div>
+      </section>
       {/* Footer minimalista */}
       <footer className="mt-16 text-center">
         <p className="text-brand-dark/75 text-[12px] uppercase tracking-[0.3em]">
