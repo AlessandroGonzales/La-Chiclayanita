@@ -44,15 +44,15 @@ import papahuancainda from "../assets/papachi.png";
 
 // Imagenes de bebidas
 import budweiser from "../assets/budweiser.jpg";
-import cocados from "../assets/cocados.png"
-import fantados from "../assets/fantados.jpg"
-import cocauno from "../assets/cocauno.jpg"
-import fantauno from "../assets/fantauno.jpg"
-import spriteuno from "../assets/spriteuno.jpg"
-import mancoraamarillas from "../assets/mancorados.jpg"
-import mancoraroja from "../assets/mancoraroja.jpg"
-import cocacinco from "../assets/cocacinco.webp"
-import fantacinco from "../assets/fantacinco.jpg"
+import cocados from "../assets/cocados.png";
+import fantados from "../assets/fantados.jpg";
+import cocauno from "../assets/cocauno.jpg";
+import fantauno from "../assets/fantauno.jpg";
+import spriteuno from "../assets/spriteuno.jpg";
+import mancoraamarillas from "../assets/mancorados.jpg";
+import mancoraroja from "../assets/mancoraroja.jpg";
+import cocacinco from "../assets/cocacinco.webp";
+import fantacinco from "../assets/fantacinco.jpg";
 
 const MENU_DATA = {
   marina: [
@@ -268,77 +268,83 @@ const MENU_DATA = {
     {
       id: "b3",
       nombre: "Fanta 2L",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "2L, Bebida gasificada, Servida helada",
-      precio :5000,
+      precio: 5000,
       url: fantados,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b4",
       nombre: "Coca Cola 1.5L",
-      descripcion : "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "1.5L, Bebida gasificada, Servida helada",
       precio: 4000,
       url: cocauno,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b5",
       nombre: "Fanta 1.5L",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "1.5L, Bebida gasificada, Servida helada",
       precio: 4000,
       url: fantauno,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b6",
       nombre: "Sprite 1.5L",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "1.5L, Bebida gasificada, Servida helada",
       precio: 4000,
       url: spriteuno,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b7",
       nombre: "Mancora Amarilla 2.5L",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "2.5L, Bebida gasificada, Servida helada",
       precio: 5000,
       url: mancoraamarillas,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b8",
       nombre: "Mancora Roja 2.5L",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "2.5L, Bebida gasificada, Servida helada",
       precio: 5000,
       url: mancoraroja,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b9",
       nombre: "Coca cola 500ml",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "500ml, Bebida gasificada, Servida helada",
       precio: 2500,
       url: cocacinco,
-      config: "lazy"
+      config: "lazy",
     },
     {
       id: "b10",
       nombre: "Fanta 500ml",
-      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      descripcion:
+        "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
       detalles: "500ml, Bebida gasificada, Servida helada",
       precio: 2500,
       url: fantacinco,
-      config: "lazy"
-    }
-
-
+      config: "lazy",
+    },
   ],
   pastas: [
     {
@@ -426,14 +432,19 @@ const categories = [
 
 const CategoryView = ({ categoryTitle, items, onBack }) => (
   <div className="min-h-screen bg-brand-bg pb-24 animate-in fade-in duration-300">
-    <div className="sticky top-0 bg-brand-bg/90 backdrop-blur-md z-20 px-6 py-5 flex items-center border-b border-brand-pink/20">
-      <button
-        onClick={onBack}
-        className="p-2 -ml-2 active:scale-75 transition-transform"
-      >
-        <ArrowLeft size={27} className="text-brand-dark" />
-      </button>
-      <h2 className="ml-4 text-xl font-bold tracking-tight text-brand-dark uppercase ml-17">
+    <div className="sticky top-0 bg-brand-bg/90 backdrop-blur-md z-20 px-6 py-5 flex items-center justify-center border-b border-brand-pink/20">
+      {/* El botón se mantiene a la izquierda gracias a su contenedor relativo */}
+      <div className="absolute left-6">
+        <button
+          onClick={onBack}
+          className="p-2 -ml-2 active:scale-75 transition-transform"
+        >
+          <ArrowLeft size={27} className="text-brand-dark" />
+        </button>
+      </div>
+
+      {/* El título ahora siempre estará en el centro exacto */}
+      <h2 className="text-xl font-bold tracking-tight text-brand-dark uppercase text-center">
         {categoryTitle}
       </h2>
     </div>
