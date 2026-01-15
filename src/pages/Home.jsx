@@ -77,7 +77,9 @@ const Home = () => {
                   <span className="text-[13px] font-bold tracking-wider uppercase">
                     Chiclayo
                   </span>
-                  <span className="text-[13px] text-white uppercase mt-1 text-center">Perú </span>
+                  <span className="text-[13px] text-white uppercase mt-1 text-center">
+                    Perú{" "}
+                  </span>
                 </div>
               </div>
 
@@ -88,18 +90,18 @@ const Home = () => {
               <div className="flex items-center gap-2">
                 <div className="flex flex-col items-end leading-none">
                   <span className="text-[13px] font-bold tracking-wider uppercase">
-                    Córdoba 
+                    Córdoba
                   </span>
                   <span className="text-[13px] text-white uppercase mt-1">
-                    Argentina 
+                    Argentina
                   </span>
                 </div>
               </div>
             </div>
 
             {/* Slogan minimalista opcional */}
-            <p className="text-center text-[12px] text-brand-pink tracking-[0.2em] font-medium uppercase mt-6">
-              De Chiclayo para el mundo
+            <p className="text-center text-[13px] text-brand-pink tracking-[0.2em] font-medium uppercase mt-6">
+              El pueblito • Sayhueque 660
             </p>
           </div>
         </div>
