@@ -16,7 +16,7 @@ import ServicesCarousel from "../pages/Carousel";
 import ceviche from "../assets/ceviche.jpg";
 import arrozmariscos from "../assets/arrozmariscos.jpg";
 import sudado from "../assets/sudado.jpg";
-import cevichemixto from "../assets/cevichemixto.jpg";
+import cevichemixto from "../assets/newcevichemixto.jpg";
 import cevichechicharron from "../assets/cevichechicharron.png";
 import chicharronpescado from "../assets/chicharronpescado.jpg";
 import chicharronrabas from "../assets/chicharronrabas.jpg";
@@ -30,21 +30,29 @@ import mostrito from "../assets/mostrito.jpg";
 import bistecpapas from "../assets/bistecpapas.jpg";
 import secocarne from "../assets/secocarne.png";
 import chaufados from "../assets/chufados.jpg";
-import chaufatres from "../assets/chaufatres.webp";
+import chaufatres from "../assets/newchaufatres.jpg";
 import bistecpobredos from "../assets/bistecpobredos.jpeg";
 
 // Imagenes de Pastas
 import tallarinsaltado from "../assets/tallarinsaltado.png";
 import combinado from "../assets/combinado.png";
 import fideosdos from "../assets/fideosdos.jpg";
-import fideostres from "../assets/fideostres.jpg";
+import fideostres from "../assets/tallarintres.jpg";
 
 // Imagenes de entradas
-import papahuancainda from "../assets/papahuancaina.jpg";
+import papahuancainda from "../assets/papachi.png";
 
 // Imagenes de bebidas
 import budweiser from "../assets/budweiser.jpg";
-import cocacola from "../assets/cocacola.jpg";
+import cocados from "../assets/cocados.png"
+import fantados from "../assets/fantados.jpg"
+import cocauno from "../assets/cocauno.jpg"
+import fantauno from "../assets/fantauno.jpg"
+import spriteuno from "../assets/spriteuno.jpg"
+import mancoraamarillas from "../assets/mancorados.jpg"
+import mancoraroja from "../assets/mancoraroja.jpg"
+import cocacinco from "../assets/cocacinco.webp"
+import fantacinco from "../assets/fantacinco.jpg"
 
 const MENU_DATA = {
   marina: [
@@ -239,12 +247,12 @@ const MENU_DATA = {
   bebidas: [
     {
       id: "b1",
-      nombre: "Coca Cola",
+      nombre: "Coca Cola 2L",
       descripcion:
         "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
-      detalles: "Bebida gasificada, Servida helada",
-      precio: 3500,
-      url: cocacola,
+      detalles: "2L, Bebida gasificada, Servida helada",
+      precio: 5000,
+      url: cocados,
       config: "eager",
     },
     {
@@ -252,11 +260,85 @@ const MENU_DATA = {
       nombre: "Budweiser",
       descripcion:
         "Cerveza lager de estilo americano, cuerpo medio y sabor fresco.",
-      detalles: "Cerveza en botella, Cebada malteada (5% Alc. Vol.)",
-      precio: 3000,
+      detalles: "1 Litro, Cerveza en botella, Cebada malteada (5% Alc. Vol.)",
+      precio: 5000,
       url: budweiser,
       config: "eager",
     },
+    {
+      id: "b3",
+      nombre: "Fanta 2L",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "2L, Bebida gasificada, Servida helada",
+      precio :5000,
+      url: fantados,
+      config: "lazy"
+    },
+    {
+      id: "b4",
+      nombre: "Coca Cola 1.5L",
+      descripcion : "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "1.5L, Bebida gasificada, Servida helada",
+      precio: 4000,
+      url: cocauno,
+      config: "lazy"
+    },
+    {
+      id: "b5",
+      nombre: "Fanta 1.5L",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "1.5L, Bebida gasificada, Servida helada",
+      precio: 4000,
+      url: fantauno,
+      config: "lazy"
+    },
+    {
+      id: "b6",
+      nombre: "Sprite 1.5L",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "1.5L, Bebida gasificada, Servida helada",
+      precio: 4000,
+      url: spriteuno,
+      config: "lazy"
+    },
+    {
+      id: "b7",
+      nombre: "Mancora Amarilla 2.5L",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "2.5L, Bebida gasificada, Servida helada",
+      precio: 5000,
+      url: mancoraamarillas,
+      config: "lazy"
+    },
+    {
+      id: "b8",
+      nombre: "Mancora Roja 2.5L",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "2.5L, Bebida gasificada, Servida helada",
+      precio: 5000,
+      url: mancoraroja,
+      config: "lazy"
+    },
+    {
+      id: "b9",
+      nombre: "Coca cola 500ml",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "500ml, Bebida gasificada, Servida helada",
+      precio: 2500,
+      url: cocacinco,
+      config: "lazy"
+    },
+    {
+      id: "b10",
+      nombre: "Fanta 500ml",
+      descripcion: "Gaseosa refrescante sabor original, ideal para acompañar cualquier plato.",
+      detalles: "500ml, Bebida gasificada, Servida helada",
+      precio: 2500,
+      url: fantacinco,
+      config: "lazy"
+    }
+
+
   ],
   pastas: [
     {
