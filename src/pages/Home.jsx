@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import logo from "../assets/lachiclayanita.png";
-import chiclayo from "../assets/chiclayoperu.jpg"
+import chiclayo from "../assets/chiclayoperu.jpg";
 import pimental from "../assets/pimental.webp";
-
 
 // Simulación de transición de imágenes de fondo
 const IMAGES = [chiclayo, pimental];
@@ -38,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* Contenido Principal */}
-      <div className="relative z-10 flex flex-col items-center justify-between h-full px-6 py-16">
+      <div className="relative z-10 flex flex-col items-center justify-between h-full px-6 py-16 ">
         {/* Header: Logo y Títulos */}
         <div className="flex flex-col items-center text-center mt-10">
           <div className="w-48 h-48 mb-6 ">
@@ -68,9 +67,41 @@ const Home = () => {
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-active:translate-y-0 transition-transform"></div>
           </Link>
-          <p className="text-white/70 text-center text-xs mt-6 tracking-widest uppercase">
-            Chiclayo • Perú
-          </p>
+
+          {/* Sección de Ubicación Compacta */}
+          <div className="mt-6 w-full px-4">
+            <div className="flex items-center justify-center gap-4 text-white">
+              {/* Chiclayo, Perú */}
+              <div className="flex items-center gap-2">
+                <div className="flex flex-col leading-none">
+                  <span className="text-[13px] font-bold tracking-wider uppercase">
+                    Chiclayo
+                  </span>
+                  <span className="text-[13px] text-white uppercase mt-1 text-center">Perú </span>
+                </div>
+              </div>
+
+              {/* Divisor pequeño */}
+              <div className="w-[2px] h-6 bg-white"></div>
+
+              {/* Córdoba, Argentina */}
+              <div className="flex items-center gap-2">
+                <div className="flex flex-col items-end leading-none">
+                  <span className="text-[13px] font-bold tracking-wider uppercase">
+                    Córdoba 
+                  </span>
+                  <span className="text-[13px] text-white uppercase mt-1">
+                    Argentina 
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Slogan minimalista opcional */}
+            <p className="text-center text-[12px] text-brand-pink tracking-[0.2em] font-medium uppercase mt-6">
+              De Chiclayo para el mundo
+            </p>
+          </div>
         </div>
       </div>
     </div>

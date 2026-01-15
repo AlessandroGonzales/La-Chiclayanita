@@ -54,7 +54,7 @@ const ServiceCard = ({ service }) => {
           {service.subtitle}
         </h2>
         <p className="text-lg font-bold text-white/90 mb-4">
-          ${new Intl.NumberFormat("es-AR").format(service.price)}
+          $ {new Intl.NumberFormat("es-AR").format(service.price)}
         </p>
         <button onClick={handleWhatsAppClick}className="w-fit px-3 py-2 rounded-full text-[11px] font-bold uppercase bg-white text-black hover:bg-brand-pink hover:text-white transition-colors">
           Pedir Menú

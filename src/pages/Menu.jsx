@@ -590,8 +590,8 @@ const Menu = () => {
       </section>
       {/* Footer minimalista */}
       <footer className="mt-16 text-center">
-        <p className="text-brand-dark/75 text-[12px] uppercase tracking-[0.3em]">
-          La Chiclayanita • 2026
+        <p className="text-brand-dark text-[13px] uppercase  font-bold tracking-[0.2em]">
+          El pueblito • Sayhueque 660
         </p>
       </footer>
     </div>
