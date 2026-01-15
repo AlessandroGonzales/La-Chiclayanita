@@ -10,14 +10,14 @@ const menuOfDay = [
     id: 1,
     title: "Miercoles",
     subtitle: "Tallarin con pollo y sopa",
-    price: 10000,
+    price: 7000,
     url: fideospollo,
   },
   {
     id: 2,
     title: "Martes",
     subtitle: "Ají de gallina",
-    price: 15000,
+    price: 7000,
     url: ajigallina,
   },
 ];
