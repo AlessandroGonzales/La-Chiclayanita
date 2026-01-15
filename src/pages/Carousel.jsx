@@ -15,8 +15,8 @@ const menuOfDay = [
   },
   {
     id: 2,
-    title: "Martes",
-    subtitle: "Ají de gallina",
+    title: "Jueves",
+    subtitle: "Ají de gallina y sopa",
     price: 7000,
     url: ajigallina,
   },
@@ -46,17 +46,17 @@ const ServiceCard = ({ service }) => {
         className="w-full h-full object-cover"
       />
       {/* Overlay Gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
-        <span className="text-brand-pink font-bold uppercase tracking-widest text-xs mb-1">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent flex flex-col justify-end p-6 text-white">
+        <span className="text-brand-pink font-bold uppercase tracking-widest text-base mb-1">
           {service.title}
         </span>
-        <h2 className="text-2xl md:text-4xl font-black mb-2 uppercase">
+        <h2 className="text-base font-black mb-2 uppercase">
           {service.subtitle}
         </h2>
         <p className="text-lg font-bold text-white/90 mb-4">
           ${new Intl.NumberFormat("es-AR").format(service.price)}
         </p>
-        <button onClick={handleWhatsAppClick}className="w-fit px-6 py-2 rounded-full text-[10px] font-bold uppercase bg-white text-black hover:bg-brand-pink hover:text-white transition-colors">
+        <button onClick={handleWhatsAppClick}className="w-fit px-3 py-2 rounded-full text-[11px] font-bold uppercase bg-white text-black hover:bg-brand-pink hover:text-white transition-colors">
           Pedir Menú
         </button>
       </div>
