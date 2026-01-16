@@ -8,6 +8,8 @@ import {
   ArrowLeft,
   Info,
   Salad,
+  Soup
+
 } from "lucide-react";
 import { GiNoodles } from "react-icons/gi";
 import ServicesCarousel from "../pages/Carousel";
@@ -32,6 +34,7 @@ import secocarne from "../assets/secocarne.png";
 import chaufados from "../assets/chufados.jpg";
 import chaufatres from "../assets/newchaufatres.jpg";
 import bistecpobredos from "../assets/bistecpobredos.jpeg";
+import salchibroaster from "../assets/salchibroaster.jpg"
 
 // Imagenes de Pastas
 import tallarinsaltado from "../assets/tallarinsaltado.png";
@@ -41,6 +44,7 @@ import fideostres from "../assets/tallarintres.jpg";
 
 // Imagenes de entradas
 import papahuancainda from "../assets/papachi.png";
+import salchi from "../assets/salchi.jpg"
 
 // Imagenes de bebidas
 import budweiser from "../assets/budweiser.jpg";
@@ -53,6 +57,11 @@ import mancoraamarillas from "../assets/mancorados.jpg";
 import mancoraroja from "../assets/mancoraroja.jpg";
 import cocacinco from "../assets/cocacinco.webp";
 import fantacinco from "../assets/fantacinco.jpg";
+
+// Imagenes de caldos
+import caldomote from "../assets/caldomote.webp"
+import caldogallina from "../assets/caldogallina.png"
+import caldocordero from "../assets/caldocordero.jpg"
 
 const MENU_DATA = {
   marina: [
@@ -230,6 +239,16 @@ const MENU_DATA = {
       url: secocarne,
       config: "lazy",
     },
+    {
+      id: "c10",
+      nombre: "Salchipapa con alitas broaster",
+      descripcion: "Es un plato sencillo, popular en las calles y hogares peruanos, que se ha adaptado regionalmente con ingredientes locales",
+      detalles: "Pollo, salchicha, papa",
+      precio: 6000,
+      url: salchibroaster,
+      config: "lazy"
+
+    }
   ],
   entradas: [
     {
@@ -243,6 +262,15 @@ const MENU_DATA = {
       url: papahuancainda,
       config: "eager",
     },
+    {
+      id: "e2",
+      nombre: "Salchipapa",
+      descripcion: "Es un plato sencillo, popular en las calles y hogares peruanos, que se ha adaptado regionalmente con ingredientes locales.",
+      detalles: "Cremas disponibles, Papa, Salchicha",
+      precio: 5000,
+      url: salchi,
+      config: "eager"
+    }
   ],
   bebidas: [
     {
@@ -389,6 +417,35 @@ const MENU_DATA = {
       config: "lazy",
     },
   ],
+  caldos: [
+    {
+      id: "s1",
+      nombre: "Caldo de mote",
+      descripcion: "Caldo tradicional nutritiva y energética hecha a base de maíz moteado combinado con carnes como res, cerdo, cordero y mondongo",
+      detalles: "Cerdo, Cordero, Mondongo, Mote",
+      precio: 7000,
+      url: caldomote,
+      config: "eager"
+    },
+    {
+      id: "s2",
+      nombre: "Caldo de gallina",
+      descripcion: "sopa tradicional, reconfortante y revitalizante, hecha con gallina criolla de sabor intenso, cocida a la perfección.",
+      detalles: "huevo duro, apio, kion, hierbabuena",
+      precio: 6000,
+      url: caldogallina,
+      config: "eager"
+    },
+    {
+      id: "s3",
+      nombre: "Caldo de cabeza de cordero",
+      descripcion: "El caldo de cabeza es un plato tradicional de la sierra peruana que se consume como desayuno.",
+      detalles: "chuños, arroz, ajo",
+      precio: 7000,
+      url: caldocordero,
+      config: "lazy"
+    }
+  ]
 };
 
 const categories = [
@@ -413,16 +470,22 @@ const categories = [
     description: "Combinado con ceviche, Tallarin sal...",
     icon: <GiNoodles size={28} className="text-brand-pink" />,
   },
-
   {
     id: 4,
+    key: "caldos",
+    title: "Caldos",
+    description: "Caldo de mote, caldo de gallina",
+    icon: <Soup size={28} className="text-brand-pink"/>
+  },
+  {
+    id: 5,
     key: "entradas",
     title: "Entradas y Piqueos",
     description: "Causa, papa a la huancaína...",
     icon: <Salad size={28} className="text-brand-pink" />,
   },
   {
-    id: 5,
+    id: 6,
     key: "bebidas",
     title: "Bebidas",
     description: "Coca Cola, Budweiser...",
