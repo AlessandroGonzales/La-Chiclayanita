@@ -253,8 +253,8 @@ const MENU_DATA = {
     {
       id: "c11",
       nombre: "Chicharron de cerdo",
-      descripcion: "",
-      detalles: "cerdo",
+      descripcion: "Plato tradicional y popular que se caracteriza por ser tierno por dentro y crujiente por fuera",
+      detalles: "cerdo, crujiente",
       precio: 10000,
       url: chichacerdo,
       conig: "lazy"
