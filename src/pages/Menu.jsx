@@ -35,6 +35,7 @@ import chaufados from "../assets/chufados.jpg";
 import chaufatres from "../assets/newchaufatres.jpg";
 import bistecpobredos from "../assets/bistecpobredos.jpeg";
 import salchibroaster from "../assets/salchibroaster.jpg"
+import chichacerdo from "../assets/chichacerdo.jpg"
 
 // Imagenes de Pastas
 import tallarinsaltado from "../assets/tallarinsaltado.png";
@@ -244,9 +245,19 @@ const MENU_DATA = {
       nombre: "Salchipapa con alitas broaster",
       descripcion: "Es un plato sencillo, popular en las calles y hogares peruanos, que se ha adaptado regionalmente con ingredientes locales",
       detalles: "Pollo, salchicha, papa",
-      precio: 6000,
+      precio: 10000,
       url: salchibroaster,
       config: "lazy"
+
+    },
+    {
+      id: "c11",
+      nombre: "Chicharron de cerdo",
+      descripcion: "",
+      detalles: "cerdo",
+      precio: 10000,
+      url: chichacerdo,
+      conig: "lazy"
 
     }
   ],
